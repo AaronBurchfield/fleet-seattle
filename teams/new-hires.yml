@@ -1,4 +1,4 @@
-# Teams are available in Fleet Premium. 
+# Teams are available in Fleet Premium.
 
 # This file updates policies, queries, agent options, controls, and software for hosts assigned to the "Workstations" team.
 
@@ -12,6 +12,12 @@ queries:
 agent_options:
   path: ../lib/agent-options.yml
 controls:
+  macos_updates:
+    deadline: "2025-04-30"
+    minimum_version: "15.4"
+  macos_settings:
+    custom_settings:
+      - path: ../lib/disable-bluetooth-sharing.mobileconfig
   scripts:
     - path: ../lib/remove-zoom-artifacts.script.sh
     - path: ../lib/set-timezone.script.sh
