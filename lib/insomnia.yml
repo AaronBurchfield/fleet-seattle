@@ -1,4 +1,4 @@
 url: https://github.com/Kong/insomnia/releases/download/core%4011.0.0/Insomnia.Core-11.0.0.exe
 self_service: true
-post_install_script:
-  path: ../lib/insomnia-config.ps1
+install_script:
+  path: ../lib/insomnia-install.ps1
