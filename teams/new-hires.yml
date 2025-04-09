@@ -7,6 +7,7 @@
 name: New Hires
 policies:
   - path: ../lib/windows-device-health.policies.yml
+  - path: ../lib/1password-emergency-kit-check.yml
 queries:
   - path: ../lib/collect-failed-login-attempts.queries.yml
 agent_options:
@@ -24,6 +25,7 @@ controls:
     - path: ../lib/remove-zoom-artifacts.script.sh
     - path: ../lib/set-timezone.script.sh
     - path: ../lib/set-wallpaper.ps1
+    - path: ../lib/1password-emergency-kit-remove.sh
 team_settings:
   secrets:
     - secret: "$FLEET_NEW_HIRES_ENROLL_SECRET"
