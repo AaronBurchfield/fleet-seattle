@@ -29,6 +29,7 @@ controls:
     - path: ../lib/1password-emergency-kit-remove.sh
     - path: ../lib/zoom-config.sh
     - path: ../lib/insomnia-install.ps1
+    - path: ../lib/insomnia-uninstall.ps1
 team_settings:
   secrets:
     - secret: "$FLEET_NEW_HIRES_ENROLL_SECRET"
